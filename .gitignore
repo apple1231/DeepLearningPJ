@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment variables & Secrets (API 키·비밀번호 등)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Data (원본·전처리 대용량 데이터는 기본적으로 제외; 소용량 공유 시 예외 추가)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained Models & Checkpoints
+outputs/models/*
+!outputs/models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pkl
+*.joblib
+
+# Logs & Experiment Tracking
+logs/
+*.log
+runs/
+wandb/
+mlruns/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
